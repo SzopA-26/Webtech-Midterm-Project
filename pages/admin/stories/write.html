@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>STORIES</title>
+    <link rel="stylesheet" href="../../../public/summernote-master/dist/summernote-bs4.css">
     <link rel="stylesheet" href="../../../public/bootstrap-4.4.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../../css/public.css">
     <link rel="stylesheet" href="../../../css/story.css">
+    
 </head>
 
 <body>
@@ -45,53 +47,16 @@
 
     <div class="container">
 
-        <div class="row" id="title-header">
-            <div class="col">
-                <h1>Your stories</h1>
-            </div>
-            <div class="col text-right">
-                <button type="button" class="btn btn-outline-success" id="write-story-btn"
-                    onclick="writeBtnOnClick()">Write a story</button>
-            </div>
-        </div>
-        <ul class="nav nav-tabs" id="link-tab">
-            <li class="nav-item">
-                <a class="nav-link active" href="./draft.html">Drafts (1)</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./published.html">Published (2)</a>
-            </li>
-        </ul>
-
-        <div class="draft-content">
-            <h3>Star Galactic(3)</h3>
-            <p>in garaxy far far away...</p>
-            <figcaption class="figure-caption">
-                Last edited 3 days ago
-                <span class="dropdown">
-                    <a href="#" class="dropdown-toggle " data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false"><span class="caret"></span></a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                        <li><a class="dropdown-item" href="#">Delete</a></li>
-                        <li><a class="dropdown-item" href="#">Publish</a></li>
-                    </ul>
-                </span>
-            </figcaption>
-            <hr>
-        </div>
-
-
-
+        <div id="summernote"></div>
+        <div id="content"></div>
 
     </div>
 
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="../../../public/jquery-3.4.1.min.js"></script>
     <script src="../../../public/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../../../js/stories.js"></script>
+    <script src="../../../public/summernote-master/dist/summernote-bs4.min.js"></script>
+    <script src="../../../js/write.js"></script>
 
 </body>
 
