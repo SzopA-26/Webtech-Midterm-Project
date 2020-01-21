@@ -1,3 +1,4 @@
+
 function loginBtnOnClick() {
     window.location = "../admin/index.html"
 }
