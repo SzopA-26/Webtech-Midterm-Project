@@ -5,3 +5,8 @@ function loginBtnOnClick() {
 function logoutBtnOnClick() {
     window.location = "../user/index.html"
 }
+
+function signUpBtnOnClick(){
+    
+}
+
