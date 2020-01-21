@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../../public/bootstrap-4.4.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../public/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="../../css/public.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../public/fontawesome-free-5.12.0-web/css/all.min.css">
 </head>
 
 <body>
@@ -31,10 +31,16 @@
                     <a class="nav-link" href="./dashboard.html">DASHBOARD</a>
                 </li>
             </ul>
+            <form class="form-inline" id="search-form">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search" id="search-input">
+                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit" id="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
         </div>
         <div id="button-account">
             <button type="button" class="btn btn-outline-secondary" id="log-in-btn" onclick="logoutBtnOnClick()">Log out</button>
-            <button type="button" class="btn btn-primary" id="sign-up-btn"><strong>Sign up</strong></button>
+            <!-- <button type="button" class="btn btn-primary" id="sign-up-btn"><strong>Sign up</strong></button> -->
         </div>
     </nav>
 
@@ -302,7 +308,7 @@
 
     <script src="../../public/jquery-3.4.1.min.js"></script>
     <script src="../../public/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../../js/index.js"></script>
+    <script src="../../js/public.js"></script>
 </body>
 
 </html>

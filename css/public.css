@@ -5,3 +5,10 @@
 nav.navbar {
     margin-bottom: 20px;
 }
+#search-form {
+    margin-left: 15vw;
+    width: 45vw;
+}
+#search-input {
+    width: 39vw;
+}
