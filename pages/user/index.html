@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../public/bootstrap-4.4.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../public/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="../../css/public.css">
+    <link rel="stylesheet" href="../../public/fontawesome-free-5.12.0-web/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
 </head>
 
@@ -35,6 +36,12 @@
                     <a class="nav-link" href="./stories/draft.html">STORIES</a>
                 </li>
             </ul>
+            <form class="form-inline" id="search-form">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search" id="search-input">
+                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit" id="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
         </div>
         <div id="button-account">
             <button type="button" class="btn btn-outline-secondary" id="log-in-btn" onclick="loginBtnOnClick()">Log in</button>
