@@ -7,7 +7,8 @@ $(document).ready(function () {
     });
 
     $('#log-in-btn').on('click', function() {
-        var markupStr = $('.summernote').eq(1).summernote('code');
+        var markupStr = $('#summernote').summernote('code');
+        console.log(markupStr)
         document.getElementById("content").innerHTML = markupStr;
 
     })
