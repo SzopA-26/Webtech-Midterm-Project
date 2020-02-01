@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HOME</title>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
-    <link rel="stylesheet" href="../../public/bootstrap-4.4.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../public/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="../../css/public.css">
-    <link rel="stylesheet" href="../../public/fontawesome-free-5.12.0-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../public/fontawesome-free-5.12.0-web/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
+    <!-- link -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="../../img/logo-project.png" width="54.29" height="34.29" class="d-inline-block align-top" alt="">
-            
+
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,12 +53,12 @@
         <div id="button-account">
             <button type="button" class="btn btn-outline-secondary" id="log-in-btn" data-toggle="modal"
                 data-target="#login-modal">Log in</button>
-            <button type="button" class="btn btn-primary" id="sign-up-btn" data-toggle="modal"
+            <button type="button" class="btn btn-info" id="sign-up-btn" data-toggle="modal"
                 data-target="#signup-modal"><strong>Sign up</strong></button>
         </div>
     </nav>
 
-    <!-- Modal -->
+    <!-- Modal login-->
     <div class="modal fade" id="login-modal" role="dialog">
         <div class="modal-dialog">
 
@@ -62,36 +68,55 @@
                     <div class="modal-header">
                         <div class="container">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 id="header-login" class="modal-title">Login</h4>
+                            <div class="container">
+                                <h3 id="header-login" style="text-align:center" class="modal-title">Login</h3>
+                            </div>
                         </div>
                     </div>
                     <div class="modal-body">
                     </div>
 
-                    <form action="/action_page.php">
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="pwd">Password:</label>
-                            <input type="password" class="form-control" id="pwd" placeholder="Enter password"
-                                name="pwd">
-                        </div>
-                    </form>
-                    <br>
+                    <div class="container">
 
+                        <div class="input-group">
+                            <span class="input-group-append bg-white border-left-0">
+                                <span class="input-group-text bg-transparent">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                            </span>
+                            <input type="email" class="form-control " id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <br>
+
+
+                        <div class="input-group">
+                            <span class="input-group-append bg-white border-left-0">
+                                <span class="input-group-text bg-transparent">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </span>
+                            <input type="password" class="form-control " id="password" placeholder="Enter password"
+                                name="password">
+                        </div>
+                    </div>
+                    <br>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-default" onclick="loginBtnOnClick()">Submit</button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button class="btn btn-outline-info border-left-0 border" type="submit"
+                            onclick="loginBtnOnClick()">Submit
+                            <span class="fa fa-check"></span>
+                        </button>
+                        <button class="btn btn-outline-danger border-left-0 border" type="submit"
+                            data-dismiss="modal">Cancel
+                            <span class="fa fa-times"></span>
+                        </button>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
-    <!-- Modal -->
+
+    <!-- Modal register-->
     <div class="modal fade" id="signup-modal" role="dialog">
         <div class="modal-dialog">
 
@@ -101,61 +126,99 @@
                     <div class="modal-header">
                         <div class="container">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 id="header-login" class="modal-title">Sign up</h4>
+                            <h3 id="header-login" style="text-align: center;" class="modal-title">Sign up</h3>
                         </div>
                     </div>
                     <div class="modal-body">
                     </div>
 
-                    <form action="/action_page.php">
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    <div class="container">
+                        <div class="input-group">
+                            <span class="input-group-append bg-white border-left-0">
+                                <span class="input-group-text bg-transparent">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                            </span>
+                            <input type="email" class="form-control " id="email" placeholder="Enter email" name="email">
                         </div>
-                        <div class="form-group">
-                            <label for="email">Username:</label>
-                            <input type="email" class="form-control" id="username" placeholder="Enter username"
+                        <br>
+                        <div class="input-group">
+                            <span class="input-group-append bg-white border-left-0">
+                                <span class="input-group-text bg-transparent">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </span>
+                            <input type="username" class="form-control " id="username" placeholder="Enter username"
                                 name="username">
                         </div>
-                        <div class="form-group">
-                            <label for="pwd">Password:</label>
+                        <br>
+
+                        <div class="input-group">
+                            <span class="input-group-append bg-white border-left-0">
+                                <span class="input-group-text bg-transparent">
+                                    <i class="fas fa-unlock"></i>
+                                </span>
+                            </span>
                             <input type="password" class="form-control" id="password" placeholder="Enter password"
                                 name="password">
                         </div>
-                        <div class="form-group">
-                            <label for="pwd">Confirm Password:</label>
-                            <input type="password" class="form-control" id="confirm-password"
-                                placeholder="Confirm password" name="confirm-password">
+                        <br>
+
+                        <div class="input-group">
+                            <span class="input-group-append bg-white border-left-0">
+                                <span class="input-group-text bg-transparent">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </span>
+                            <input type="c-password" class="form-control " id="c-password"
+                                placeholder="Confirm password" name="c-password">
                         </div>
+                        <br>
                         <div>
-                            <label>Gender:</label>
+                            <input id="datepicker" width="276" placeholder="Date of birth">
+                            <script>
+                                $('#datepicker').datepicker({
+                                    uiLibrary: 'bootstrap4'
+                                });
+                            </script>
                         </div>
+                        <br>
+
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
                                 value="option1">
-                            <label class="form-check-label" for="inlineRadio1">Male</label>
+                            <label class="form-check-label" for="inlineRadio1">
+                                <i class="fas fa-male" style=" font-size: 20px; color: Dodgerblue"></i>
+                                Male</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
                                 value="option2">
-                            <label class="form-check-label" for="inlineRadio2">Female</label>
+                            <label class="form-check-label" for="inlineRadio2">
+                                <i class="fas fa-female" style="font-size: 20px; color: rgb(248, 115, 188)"></i>
+                                Female</label>
                         </div>
-
-                    </form>
+                    </div>
                     <br>
 
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-default" onclick="signUpBtnOnClick()">Submit</button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button class="btn btn-outline-info border-left-0 border" type="submit"
+                            onclick="signUpBtnOnClick()">Submit
+                            <span class="fa fa-check"></span>
+                        </button>
+                        <button class="btn btn-outline-danger border-left-0 border" type="submit"
+                            data-dismiss="modal">Cancel
+                            <span class="fa fa-times"></span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    
 
 
+    <!-- slide -->
     <div class="container">
         <!-- <img src="" -->
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -416,11 +479,12 @@
 
     </div>
 
+    <!-- <script src="../../js/datepicker.js"></script> -->
 
-
+    <script src="../../js/public.js"></script>
     <script src="../../public/jquery-3.4.1.min.js"></script>
     <script src="../../public/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../../js/public.js"></script>
+
 </body>
 
 </html>

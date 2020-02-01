@@ -1,12 +1,9 @@
-
 function loginBtnOnClick() {
-    window.location = "../admin/index.html"
+    window.location = "../admin/index.html";
 }
 function logoutBtnOnClick() {
-    window.location = "../user/index.html"
+    window.location = "../user/index.html";
 }
+function signUpBtnOnClick() {
 
-function signUpBtnOnClick(){
-    
 }
-
