@@ -42,19 +42,35 @@
                 </li>
             </ul>
             <div class="dropdown">
-                <button class="btn btn-outline-secondary " type="button" id="dropdown-update" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-bell"></i>
-                  UPDATE
+                <button class="btn btn-outline-secondary " type="button" id="dropdown-update" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-bell"></i>
+                    UPDATE
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    
-                  <button class="dropdown-item" type="button">Update 1</button>
-                  <button class="dropdown-item" type="button">Update 2</button>
-                  <button class="dropdown-item" type="button">Update 3</button>
-                  <button class="dropdown-item" type="button">Update 4</button>
-                  <button class="dropdown-item" type="button">Update 5</button>
+                <div class="dropdown-menu" id="update-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">
+                        <img src="../../img/trend-1.jpg" width="40" height="40"
+                            style="margin-right: 0; margin-left: auto;">
+                            <span style="margin-left: 50;">user1 like your post</span>
+                    </button>
+                    <button class="dropdown-item" type="button">
+                        <img src="../../img/book-cover-3.jpg" width="40" height="40">
+                        user2 up new story
+                    </button>
+                    <button class="dropdown-item" type="button">
+                        <img src="../../img/gift1.png" width="40" height="40">
+                        user3 send you gifts
+                    </button>
+                    <button class="dropdown-item" type="button">
+                        <img src="../../img/book-cover-2.jpg" width="40" height="40">
+                        user4 up new story
+                    </button>
+                    <button class="dropdown-item" type="button">
+                        <img src="../../img/trend-2.jpg" width="40" height="40">
+                        user5 comment your post
+                    </button>
                 </div>
-              </div>
+            </div>
             <form class="form-inline" id="search-form">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search"
                     id="search-input">
@@ -425,7 +441,7 @@
             <div class="col">
                 <h1>Trend</h1>
                 <br>
-                <div class="card" id="t-card" >
+                <div class="card" id="t-card">
                     <div class="card-body">
                         <h5 class="card-title">1. Name</h5>
                         <h6 class="card-subtitle mb-2 text-muted">type</h6>
@@ -491,7 +507,7 @@
 
     </div>
 
-    
+
 
     <script src="../../js/public.js"></script>
     <script src="../../public/jquery-3.4.1.min.js"></script>
