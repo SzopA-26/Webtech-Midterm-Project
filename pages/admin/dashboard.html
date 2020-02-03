@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="../../public/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="../../css/public.css">
     <link rel="stylesheet" href="../../public/fontawesome-free-5.12.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../../css/dashboard.css">
 
 </head>
 
 <body>
+    <!--link  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="../../img/logo-project.png" width="54.29" height="34.29" class="d-inline-block align-top" alt="">
@@ -50,26 +52,67 @@
         </div>
     </nav>
     <br>
-    <br>
-    <!-- <div class="container">
+    <!-- card -->
+    <div class="container">
         <div class="row">
-            <div class="card" style="width: 18rem; color: tomato;">
-                <div class="card-body">
-                    <h5 class="card-title" >Pending request</h5>
-                    <br>
-                    <i class="fas fa-user-clock" style="color:hotpink; font-size: 30px;">
-                        
-                    </i>
-                    <br>
-                    <span style=" text-align: right">
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    </span>
-                    <br>
-                    <a href="#" class="btn btn-outline-secondary" style="margin:auto;display:block;">Detail</a>
+            <div class="col-4">
+                <div class="card" id="card-rq" style="width: 18rem; color: rgb(108, 142, 255);">
+                    <div class="card-body">
+                        <h5 class="card-title" >Pending request</h5>
+                        <br>
+                        <i class="fas fa-user-clock" style="color: rgb(108, 142, 255); font-size: 30px;">
+                            <span style="text-align: center;">      dddd</span>
+                        </i>
+                        <br>
+                        <!-- <span style=" text-align: right">
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </span> -->
+                        <br>
+                        <a href="#" id="detail-rq" class="btn btn-outline-secondary" >Detail</a>
+                    </div>
                 </div>
             </div>
+            <div class="col-4">
+                <div class="card" id="card-vs" style="width: 18rem; color: rgb(88, 215, 247);">
+                    <div class="card-body">
+                        <h5 class="card-title" >Visit site</h5>
+                        <br>
+                        <i class="fas fa-eye" style="color: rgb(88, 215, 247); font-size: 30px;">
+                            
+                        </i>
+                        <br>
+                        <!-- <span style=" text-align: right">
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </span> -->
+                        <br>
+                        <a href="#" id="detail-vs" class="btn btn-outline-secondary" >Detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" id="card-tp" style="width: 18rem; color: rgb(177, 108, 255);">
+                    <div class="card-body">
+                        <h5 class="card-title" >Total profit</h5>
+                        <br>
+                        <i class="fas fa-hand-holding-usd" style="color: rgb(177, 108, 255)); font-size: 30px;">
+                            
+                        </i>
+                        <br>
+                        <!-- <span style=" text-align: right">
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </span> -->
+                        <br>
+                        <!-- <p>ulpp0oi97654hjklop;lkjhgf</p>
+                        <p>ulpp0oi97654hjklop;lkjhgf</p>
+                        <p>ulpp0oi97654hjklop;lkjhgf</p> -->
+                        <a href="#" id="detail-tp" class="btn btn-outline-secondary" >Detail</a>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-    </div> -->
+    </div>
+    <br>
 
     <div class="container">
         <h1>Daily</h1>
