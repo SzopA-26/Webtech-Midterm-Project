@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="../../public/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../public/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="../../css/public.css">
+    <link rel="stylesheet" href="../../public/fontawesome-free-5.12.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../../css/dashboard.css">
+
+</head>
+
+<body>
+    <!--link  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="../../img/logo-project.png" width="54.29" height="34.29" class="d-inline-block align-top" alt="">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./dashboard.html">DASHBOARD<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./users.html">USERS</a>
+                </li>
+            </ul>
+            <form class="form-inline" id="search-form">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search"
+                    id="search-input">
+                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit" id="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <div id="button-account">
+            <button type="button" class="btn btn-outline-secondary" id="log-in-btn" onclick="logoutBtnOnClick()">Log
+                out</button>
+        </div>
+    </nav>
+    <br>
+    <!-- card -->
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card" id="card-rq" style="width: 18rem; color: rgb(108, 142, 255);">
+                    <div class="card-body">
+                        <h5 class="card-title" >Pending request</h5>
+                        <br>
+                        <i class="fas fa-user-clock" style="color: rgb(108, 142, 255); font-size: 30px;">
+                            <span style="text-align: center;">      dddd</span>
+                        </i>
+                        <br>
+                        <!-- <span style=" text-align: right">
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </span> -->
+                        <br>
+                        <a href="#" id="detail-rq" class="btn btn-outline-secondary" >Detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" id="card-vs" style="width: 18rem; color: rgb(88, 215, 247);">
+                    <div class="card-body">
+                        <h5 class="card-title" >Visit site</h5>
+                        <br>
+                        <i class="fas fa-eye" style="color: rgb(88, 215, 247); font-size: 30px;">
+                            
+                        </i>
+                        <br>
+                        <!-- <span style=" text-align: right">
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </span> -->
+                        <br>
+                        <a href="#" id="detail-vs" class="btn btn-outline-secondary" >Detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" id="card-tp" style="width: 18rem; color: rgb(177, 108, 255);">
+                    <div class="card-body">
+                        <h5 class="card-title" >Total profit</h5>
+                        <br>
+                        <i class="fas fa-hand-holding-usd" style="color: rgb(177, 108, 255)); font-size: 30px;">
+                            
+                        </i>
+                        <br>
+                        <!-- <span style=" text-align: right">
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </span> -->
+                        <br>
+                        <!-- <p>ulpp0oi97654hjklop;lkjhgf</p>
+                        <p>ulpp0oi97654hjklop;lkjhgf</p>
+                        <p>ulpp0oi97654hjklop;lkjhgf</p> -->
+                        <a href="#" id="detail-tp" class="btn btn-outline-secondary" >Detail</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>Daily</h1>
+        <br>
+        <div class="row">
+            <div class="col-4">
+                <h3>Most View</h3>
+                <br>
+                <table style="width:100%">
+                    <tr>
+                        <th>Name</th>
+                        <th>View</th>
+                    </tr>
+                    <tr>
+                        <td>Zee</td>
+                        <td>10000</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>9995</td>
+                    </tr>
+                    <tr>
+                        <td>Viva</td>
+                        <td>8957</td>
+                    </tr>
+                    <tr>
+                        <td>Fit</td>
+                        <td>5221</td>
+                    </tr>
+                    <tr>
+                        <td>Tee</td>
+                        <td>4532</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-4">
+                <h3>Most liked</h3>
+                <br>
+                <table style="width:100%">
+                    <tr>
+                        <th>Name</th>
+                        <th>Liked</th>
+                    </tr>
+                    <tr>
+                        <td>Zee</td>
+                        <td>9000</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>8995</td>
+                    </tr>
+                    <tr>
+                        <td>Viva</td>
+                        <td>8057</td>
+                    </tr>
+                    <tr>
+                        <td>Fit</td>
+                        <td>4221</td>
+                    </tr>
+                    <tr>
+                        <td>Tee</td>
+                        <td>2532</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-4">
+                <h3>Most Followed</h3>
+                <br>
+                <table style="width:100%">
+                    <tr>
+                        <th>Name</th>
+                        <th>Followed</th>
+                    </tr>
+                    <tr>
+                        <td>Zee</td>
+                        <td>20000</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>19995</td>
+                    </tr>
+                    <tr>
+                        <td>Viva</td>
+                        <td>18957</td>
+                    </tr>
+                    <tr>
+                        <td>Fit</td>
+                        <td>15221</td>
+                    </tr>
+                    <tr>
+                        <td>Tee</td>
+                        <td>14532</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr class="under-line">
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h1>Weekly</h1>
+        <br>
+        <div class="row">
+            <div class="col-4">
+                <h3>Most View</h3>
+                <br>
+                <table style="width:100%">
+                    <tr>
+                        <th>Name</th>
+                        <th>View</th>
+                    </tr>
+                    <tr>
+                        <td>Zee</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>99950</td>
+                    </tr>
+                    <tr>
+                        <td>Viva</td>
+                        <td>89570</td>
+                    </tr>
+                    <tr>
+                        <td>Fit</td>
+                        <td>72210</td>
+                    </tr>
+                    <tr>
+                        <td>Tee</td>
+                        <td>65320</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-4">
+                <h3>Most liked</h3>
+                <br>
+                <table style="width:100%">
+                    <tr>
+                        <th>Name</th>
+                        <th>Liked</th>
+                    </tr>
+                    <tr>
+                        <td>Zee</td>
+                        <td>95555</td>
+                    </tr>
+                    <tr>
+                        <td>Viva</td>
+                        <td>80500</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>79570</td>
+                    </tr>
+                    <tr>
+                        <td>Tee</td>
+                        <td>52210</td>
+                    </tr>
+                    <tr>
+                        <td>Fit</td>
+                        <td>45320</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-4">
+                <h3>Most Followed</h3>
+                <br>
+                <table style="width:100%">
+                    <tr>
+                        <th>Name</th>
+                        <th>Followed</th>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>200000</td>
+                    </tr>
+                    <tr>
+                        <td>Zee</td>
+                        <td>190000</td>
+                    </tr>
+                    <tr>
+                        <td>Viva</td>
+                        <td>18957</td>
+                    </tr>
+                    <tr>
+                        <td>Fit</td>
+                        <td>15221</td>
+                    </tr>
+                    <tr>
+                        <td>Tee</td>
+                        <td>14532</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr class="under-line">
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h1>Monthly</h1>
+        <br>
+        <div class="row">
+            <div class="col-4">
+                <h3>Most View</h3>
+                <br>
+                <table style="width:100%">
+                    <tr>
+                        <th>Name</th>
+                        <th>View</th>
+                    </tr>
+                    <tr>
+                        <td>Zee</td>
+                        <td>1000000</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>999500</td>
+                    </tr>
+                    <tr>
+                        <td>Viva</td>
+                        <td>895700</td>
+                    </tr>
+                    <tr>
+                        <td>Fit</td>
+                        <td>722100</td>
+                    </tr>
+                    <tr>
+                        <td>Tee</td>
+                        <td>653200</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-4">
+                <h3>Most liked</h3>
+                <br>
+                <table style="width:100%">
+                    <tr>
+                        <th>Name</th>
+                        <th>Liked</th>
+                    </tr>
+                    <tr>
+                        <td>Zee</td>
+                        <td>955550</td>
+                    </tr>
+                    <tr>
+                        <td>Viva</td>
+                        <td>805000</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>795700</td>
+                    </tr>
+                    <tr>
+                        <td>Tee</td>
+                        <td>522100</td>
+                    </tr>
+                    <tr>
+                        <td>Fit</td>
+                        <td>453200</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-4">
+                <h3>Most Followed</h3>
+                <br>
+                <table style="width:100%">
+                    <tr>
+                        <th>Name</th>
+                        <th>Followed</th>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>2000000</td>
+                    </tr>
+                    <tr>
+                        <td>Zee</td>
+                        <td>1900000</td>
+                    </tr>
+                    <tr>
+                        <td>Viva</td>
+                        <td>189570</td>
+                    </tr>
+                    <tr>
+                        <td>Fit</td>
+                        <td>152210</td>
+                    </tr>
+                    <tr>
+                        <td>Tee</td>
+                        <td>145320</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr class="under-line">
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- <canvas id="horizontalBar"></canvas> -->
+
+    </div>
+
+    <script src="../../public/jquery-3.4.1.min.js"></script>
+    <script src="../../public/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/public.js"></script>
+    <!-- <script src="../../js/dashboard.js"></script> -->
+</body>
+
+</html>

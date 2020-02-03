@@ -1,0 +1,47 @@
+#detail-rq:hover {
+    background-color: rgb(108, 142, 255);
+    color: white;
+}
+
+#detail-rq {
+    margin: auto;
+    display: block;
+    color: rgb(108, 142, 255);
+    border-color: rgb(108, 142, 255);
+}
+#detail-tp:hover {
+    background-color: rgb(177, 108, 255);
+    color: white;
+}
+
+#detail-tp {
+    margin: auto;
+    display: block;
+    color: rgb(177, 108, 255);
+    border-color: rgb(177, 108, 255);
+}
+
+#detail-vs:hover {
+    background-color: rgb(88, 215, 247);
+    color: white;
+}
+
+#detail-vs {
+    margin: auto;
+    display: block;
+    color: rgb(88, 215, 247);
+    border-color: rgb(88, 215, 247);
+}
+
+#card-rq{
+    box-shadow: 0 2px 7px 0 rgb(108, 142, 255);
+    transition: 0.3s;
+}
+#card-tp{
+    box-shadow: 0 2px 7px 0 rgb(177, 108, 255);
+    transition: 0.3s;
+}
+#card-vs{
+    box-shadow: 0 2px 7px 0 rgb(88, 215, 247);
+    transition: 0.3s;
+}

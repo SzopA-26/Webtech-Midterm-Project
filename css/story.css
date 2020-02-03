@@ -11,3 +11,13 @@
 a.nav-link, span.caret {
     color: #000;
 }
+#write-story-btn {
+    color: #05af1b;
+    background-color: #fff;
+    border-color: #05af1b;
+}
+#write-story-btn:hover {
+    color: #05af1b;
+    background-color: #fff;
+    border-color: #05af1b;
+}

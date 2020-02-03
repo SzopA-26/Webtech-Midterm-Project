@@ -5,3 +5,44 @@ div.card {
 #follow-btn{
     width: 100%;
 }
+#gift-btn{
+    width: 100%;
+}
+#g100-btn:hover {
+    background-color: rgb(240, 218, 23);
+    color: white;
+    border-color: rgb(240, 218, 23);
+}
+
+#g100-btn {
+    /* margin: auto;
+    display: block; */
+    color: rgb(240, 218, 23);
+    border-color: rgb(240, 218, 23);
+}
+
+#g500-btn:hover {
+    background-color: rgb(240, 153, 23);
+    color: white;
+    border-color: rgb(240, 153, 23);
+}
+
+#g500-btn {
+    /* margin: auto;
+    display: block; */
+    color: rgb(240, 153, 23);
+    border-color: rgb(240, 153, 23);
+}
+
+#g1000-btn:hover {
+    background-color: rgb(240, 92, 23);
+    color: white;
+    border-color: rgb(240, 92, 23);
+}
+
+#g1000-btn {
+    /* margin: auto;
+    display: block; */
+    color: rgb(240, 92, 23);
+    border-color: rgb(240, 92, 23);
+}
