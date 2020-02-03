@@ -39,7 +39,6 @@ class UsersController extends Controller
 
         if ($user) {
             Session::write('Auth', [
-                'user_id' => $user->id,
                 'name' => $user->name,
                 'role' => 'Admin'
             ]);

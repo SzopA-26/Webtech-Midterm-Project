@@ -10,7 +10,7 @@ class DB
 
     public function queryFirst($sql, array $params = null)
     {
-        $statement = $this->pdo->prepare($sql); //Prepared Statement ป้องกัน SQL Injection
+        $statement = $this->pdo->prepare($sql);
         $statement->execute($params);
         return $statement->fetch(PDO::FETCH_OBJ);
     }
