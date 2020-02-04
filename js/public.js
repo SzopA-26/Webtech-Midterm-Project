@@ -2,7 +2,7 @@ function loginBtnOnClick() {
     window.location = "../admin/index.html";
 }
 function logoutBtnOnClick() {
-    window.location = "../user/index.html";
+    window.location = "../guest-user/index.html";
 }
 function signUpBtnOnClick() {
 

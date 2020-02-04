@@ -8,7 +8,7 @@ nav.navbar {
 }
 
 #search-form {
-    margin-left: 5vw;
+    margin-left: 20vw;
     width: 45vw;
 }
 
@@ -21,11 +21,10 @@ nav.navbar {
     transition: 0.3s;
     
 }
-
 #t-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 23, 83, 0.671);
 }
-
+/* 
 #dropdown-update{
     border-color: white;
 }
@@ -33,4 +32,4 @@ nav.navbar {
 #update-menu{
     width: 200;
     /* height: ; */
-}
+} */

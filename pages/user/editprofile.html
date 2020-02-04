@@ -60,10 +60,10 @@
                         <div class="row">
                             <div class="col-4">
                                 <img src="../../img/trend-1.jpg" width="80" height="80"
-                                style="margin-right: 0; margin-left: auto;">
+                                    style="margin-right: 0; margin-left: auto;">
                             </div>
                             <div class="col">
-                                <div >user1 like your post</div>
+                                <div>user1 like your post</div>
                                 <div>21:00</div>
                                 <div>12/01/2020</div>
                             </div>
@@ -102,19 +102,14 @@
             </form>
         </div>
         <div id="button-account">
-            <button type="button" class="btn btn-outline-secondary" id="log-in-btn" onclick="logoutBtnOnClick()">Log out</button>
+            <button type="button" class="btn btn-outline-secondary" id="log-in-btn" onclick="logoutBtnOnClick()">Log
+                out</button>
             <!-- <button type="button" class="btn btn-outline-secondary" id="log-in-btn" data-toggle="modal"
                 data-target="#login-modal">Log in</button>
             <button type="button" class="btn btn-info" id="sign-up-btn" data-toggle="modal"
                 data-target="#signup-modal"><strong>Sign up</strong></button> -->
         </div>
     </nav>
-    
-
-
-   
-
-
 
     <div class="container">
         <div class="row">
@@ -149,31 +144,76 @@
                     </div>
                 </div>
                 <div class="container">
-                
-                    <button type="button" class="btn btn-primary" id="follow-btn" data-toggle="modal"
-                        data-target="#gift-modal"><strong>FOLLOW</strong></button>
-                    <br>
-                    <br>
-                    <button type="button" class="btn btn-outline-primary" id="follow-btn" data-toggle="modal"
-                        data-target="#gift-modal"><span>GIFT </span><i class="fas fa-gift"></i></button>
-                    
-    
+
+
                 </div>
-                
+
             </div>
             <div class="col-8">
-                <div class="card">
+                <!-- <div class="card">
                     <div class="card-body">
                         This is some text within a card body.
+                    </div>
+                </div> -->
+                <!-- <h3>Edit Profile</h3> -->
+                <div>
+                    <div class="card">
+                        <div class="card-header" style="font-size: 150%;">
+                            Edit Profile
+                        </div>
+                        <ul class="list-group list-group-flush">
+
+                            <li class="list-group-item">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div style="font-size: 110%;"><i class="far fa-user"></i> username</div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div style="font-size: 110%;">user1</div>
+                                            <!-- <input type="password" class="form-control" id="inputPassword"> -->
+                                        </div>
+                                        <div class="col" style="text-align: right;">
+                                            <button id="edit-us" type="button" class="btn btn-light" data-toggle="modal"
+                                                data-target="#edit-us-modal"
+                                                style="margin-left: auto; margin-right: 0;">
+                                                edit
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            <li class="list-group-item">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div style="font-size: 110%;"><i class="fas fa-key"></i> password</div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div style="font-size: 110%;" type="password"></div>
+                                            <!-- <input type="password" class="form-control" id="inputPassword"> -->
+
+                                        </div>
+                                        <div class="col" style="text-align: right;">
+                                            <button id="edit-pw" type="button" class="btn btn-light" data-toggle="modal"
+                                                data-target="#edit-pw-modal"
+                                                style="margin-left: auto; margin-right: 0;">
+                                                edit
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal gift-->
-    <div class="modal" id="gift-modal" role="dialog">
-        <div class="modal-dialog modal-sm">
+    <!-- Modal Edit US-->
+    <div class="modal fade" id="edit-us-modal" role="dialog">
+        <div class="modal-dialog">
 
             <!-- Modal content-->
             <div class="modal-content">
@@ -182,7 +222,7 @@
                         <div class="container">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <div class="container">
-                                <h3 id="header-login" style="text-align:center" class="modal-title">Send gift for support</h3>
+                                <h3 id="header-login" style="text-align:center" class="modal-title">Change Username</h3>
                             </div>
                         </div>
                     </div>
@@ -190,14 +230,22 @@
                     </div>
 
                     <div class="container">
-                        <button type="button" id="g100-btn" class="btn btn-outline-secondary" ><i class="fas fa-gift"></i> 100</button>
-                        <button type="button" id="g500-btn" class="btn btn-outline-secondary" ><i class="fas fa-gift"></i> 500</button>
-                        <button type="button" id="g1000-btn" class="btn btn-outline-secondary" ><i class="fas fa-gift"></i> 1000</button>
+
+                        <div class="input-group">
+                            <span class="input-group-append bg-white border-left-0">
+                                <span class="input-group-text bg-transparent">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </span>
+                            <input type="username" class="form-control " id="username" placeholder="Enter new username"
+                                name="username">
+                        </div>
+
                     </div>
                     <br>
                     <div class="modal-footer">
                         <button class="btn btn-outline-info border-left-0 border" type="submit"
-                            onclick="">Submit
+                            onclick="loginBtnOnClick()">Submit
                             <span class="fa fa-check"></span>
                         </button>
                         <button class="btn btn-outline-danger border-left-0 border" type="submit"
@@ -209,6 +257,74 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal Edit PW-->
+    <div class="modal fade" id="edit-pw-modal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="container">
+                    <div class="modal-header">
+                        <div class="container">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <div class="container">
+                                <h3 id="header-login" style="text-align:center" class="modal-title">Change Password</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+
+                    <div class="container">
+
+                        <div class="input-group">
+                            <span class="input-group-append bg-white border-left-0">
+                                <span class="input-group-text bg-transparent">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </span>
+                            <input type="password" class="form-control " id="password" placeholder="Enter old password"
+                                name="password">
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <span class="input-group-append bg-white border-left-0">
+                                <span class="input-group-text bg-transparent">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </span>
+                            <input type="password" class="form-control " id="password" placeholder="Enter new password"
+                                name="password">
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <span class="input-group-append bg-white border-left-0">
+                                <span class="input-group-text bg-transparent">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </span>
+                            <input type="password" class="form-control " id="password" placeholder="Confirm new password"
+                                name="password">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="modal-footer">
+                        <button class="btn btn-outline-info border-left-0 border" type="submit"
+                            onclick="loginBtnOnClick()">Submit
+                            <span class="fa fa-check"></span>
+                        </button>
+                        <button class="btn btn-outline-danger border-left-0 border" type="submit"
+                            data-dismiss="modal">Cancel
+                            <span class="fa fa-times"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
     <script src="../../js/public.js"></script>
