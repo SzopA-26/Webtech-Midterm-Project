@@ -47,6 +47,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./editprofile.html">EDIT PROFILE</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./search.html">SEARCH</a>
+                </li>
 
             </ul>
             <div class="dropdown">
@@ -69,27 +72,60 @@
                             </div>
                         </div>
                     </button>
-                    <button class="dropdown-item" type="button">
+                    <button class="dropdown-item" type="button" style="margin-top: 10px;">
                         <div class="row">
-                            <div class="col-3">
-                                <img src="../../img/book-cover-3.jpg" width="40" height="40">
+                            <div class="col-4">
+                                <img src="../../img/book-cover-3.jpg" width="80" height="80"
+                                    style="margin-right: 0; margin-left: auto;">
                             </div>
                             <div class="col">
-                                <div style="margin-left: 50;">user2 up new story</div>
+                                <div>user2 up new story</div>
+                                <div>21:00</div>
+                                <div>12/01/2020</div>
                             </div>
                         </div>
                     </button>
-                    <button class="dropdown-item" type="button">
-                        <img src="../../img/gift1.png" width="40" height="40">
-                        user3 send you gifts
+                    <button class="dropdown-item" type="button" style="margin-top: 10px;">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="../../img/gift1.png" width="80" height="80"
+                                    style="margin-right: 0; margin-left: auto;">
+                            </div>
+                            <div class="col">
+                                <div>
+                                    user3 send you gifts</div>
+                                <div>21:00</div>
+                                <div>12/01/2020</div>
+                            </div>
+                        </div>
                     </button>
-                    <button class="dropdown-item" type="button">
-                        <img src="../../img/book-cover-2.jpg" width="40" height="40">
-                        user4 up new story
+                    <button class="dropdown-item" type="button" style="margin-top: 10px;">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="../../img/trend-2.jpg" width="80" height="80"
+                                    style="margin-right: 0; margin-left: auto;">
+                            </div>
+                            <div class="col">
+                                <div>
+                                    user4 up new story</div>
+                                <div>21:00</div>
+                                <div>12/01/2020</div>
+                            </div>
+                        </div>
                     </button>
-                    <button class="dropdown-item" type="button">
-                        <img src="../../img/trend-2.jpg" width="40" height="40">
-                        user5 comment your post
+                    <button class="dropdown-item" type="button" style="margin-top: 10px;">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="../../img/book-cover-1.jpg" width="80" height="80"
+                                    style="margin-right: 0; margin-left: auto;">
+                            </div>
+                            <div class="col">
+                                <div>
+                                    user5 comment your post</div>
+                                <div>21:00</div>
+                                <div>12/01/2020</div>
+                            </div>
+                        </div>
                     </button>
                 </div>
             </div>
@@ -104,10 +140,6 @@
         <div id="button-account">
             <button type="button" class="btn btn-outline-secondary" id="log-in-btn" onclick="logoutBtnOnClick()">Log
                 out</button>
-            <!-- <button type="button" class="btn btn-outline-secondary" id="log-in-btn" data-toggle="modal"
-                data-target="#login-modal">Log in</button>
-            <button type="button" class="btn btn-info" id="sign-up-btn" data-toggle="modal"
-                data-target="#signup-modal"><strong>Sign up</strong></button> -->
         </div>
     </nav>
 
@@ -164,46 +196,42 @@
                         <ul class="list-group list-group-flush">
 
                             <li class="list-group-item">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-3">
-                                            <div style="font-size: 110%;"><i class="far fa-user"></i> username</div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div style="font-size: 110%;">user1</div>
-                                            <!-- <input type="password" class="form-control" id="inputPassword"> -->
-                                        </div>
-                                        <div class="col" style="text-align: right;">
-                                            <button id="edit-us" type="button" class="btn btn-light" data-toggle="modal"
-                                                data-target="#edit-us-modal"
-                                                style="margin-left: auto; margin-right: 0;">
-                                                edit
-                                            </button>
-                                        </div>
+
+                                <div class="row">
+                                    
+                                    <div class="col-3" >
+                                        <i class="fa fa-user" style="margin-right: 20px;"></i>
+                                        <span style="font-size: 110%;"></i>username</span>
+                                    </div>
+                                    <div class="col-6">
+                                        <div style="font-size: 110%;">user1</div>
+                                        <!-- <input type="password" class="form-control" id="inputPassword"> -->
+                                    </div>
+                                    <div class="col" style="text-align: right;">
+                                        <button id="edit-us" type="button" class="btn btn-light" data-toggle="modal"
+                                            data-target="#edit-us-modal" style="margin-left: auto; margin-right: 0;">
+                                            edit
+                                        </button>
                                     </div>
                                 </div>
+
                             <li class="list-group-item">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-3">
-                                            <div style="font-size: 110%;"><i class="fas fa-key"></i> password</div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div style="font-size: 110%;" type="password"></div>
-                                            <!-- <input type="password" class="form-control" id="inputPassword"> -->
 
-                                        </div>
-                                        <div class="col" style="text-align: right;">
-                                            <button id="edit-pw" type="button" class="btn btn-light" data-toggle="modal"
-                                                data-target="#edit-pw-modal"
-                                                style="margin-left: auto; margin-right: 0;">
-                                                edit
-                                            </button>
-                                        </div>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <i class="fa fa-key" style="margin-right: 20px;"></i>
+                                        <span style="font-size: 110%;">password</span>
+                                    </div>
+                                    <div class="col-6">
+                                        <div style="font-size: 110%;" type="password"></div>
+                                    </div>
+                                    <div class="col" style="text-align: right;">
+                                        <button id="edit-pw" type="button" class="btn btn-light" data-toggle="modal"
+                                            data-target="#edit-pw-modal" style="margin-left: auto; margin-right: 0;">
+                                            edit
+                                        </button>
                                     </div>
                                 </div>
-
-
                         </ul>
                     </div>
                 </div>
@@ -304,8 +332,8 @@
                                     <i class="fas fa-lock"></i>
                                 </span>
                             </span>
-                            <input type="password" class="form-control " id="password" placeholder="Confirm new password"
-                                name="password">
+                            <input type="password" class="form-control " id="password"
+                                placeholder="Confirm new password" name="password">
                         </div>
                     </div>
                     <br>

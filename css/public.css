@@ -19,18 +19,31 @@ nav.navbar {
 #t-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    
 }
 
 #t-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 23, 83, 0.671);
 }
 
-#dropdown-update{
+#dropdown-update {
     border-color: white;
 }
 
-#update-menu{
+#update-menu {
+    width: 350px;
+}
+
+/* .dropdown-item {
+    width: max-content;
+}
+
+.dropdown-menu {
+    width: 200px;
+    max-height: max-content;
+    max-width: max-content;
+} */
+
+#update-menu {
     width: 200;
     /* height: ; */
 }
