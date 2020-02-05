@@ -5,6 +5,16 @@ div.card {
 #follow-btn{
     width: 100%;
 }
+#edit-btn{
+    width: 100%;
+    color: rgb(240, 27, 144);
+    border-color: rgb(240, 27, 144);
+}
+#edit-btn:hover {
+    background-color: rgb(240, 27, 144);
+    color: white;
+    border-color: rgb(240, 27, 144);
+}
 #gift-btn{
     width: 100%;
 }
